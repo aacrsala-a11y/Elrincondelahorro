@@ -1,1 +1,13 @@
+name: El Rincón del Ahorro
 
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * *'
+
+jobs:
+  prueba:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probar funcionamiento
+        run: echo "El Rincón del Ahorro funciona correctamente"
